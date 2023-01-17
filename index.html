@@ -13,16 +13,16 @@
     <title>JNE Express</title>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="navbar">
       <ul class="nav">
         <a id="logo" href="index.html">
           <img src="logo_2.jpg" alt="logo_2" />
         </a>
-        <li class="nav-item"><a href="#">HOME</a></li>
+        <li><a href="#" class="menu active">HOME</a></li>
         <img src="line-menu.png" alt="line-menu" />
-        <li class="nav-item"><a href="#">PRODUK & LAYANAN</a></li>
+        <li><a href="#" class="menu">PRODUK & LAYANAN</a></li>
         <img src="line-menu.png" alt="line-menu" />
-        <li class="nav-item"><a href="#">HUBUNGI KAMI</a></li>
+        <li><a href="#" class="menu">HUBUNGI KAMI</a></li>
         <div class="search-container">
           <form action="">
             <input
@@ -109,6 +109,9 @@
         </div>
         <div class="nav_manual">
           <label for="radio1" class="manual-btn"></label>
+          <script>
+            document.getElementById("radio1").checked = true;
+          </script>
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
           <label for="radio4" class="manual-btn"></label>
@@ -130,20 +133,86 @@
         <div class="konten3">
           <form action="">
             <h3><b>TARIF KIRIMAN</b></h3>
-            <input type="text" name="lacakKiriman" id="lacakKiriman" />
-            <input type="submit" value="CHECK" />
-            <p>Then Click 'TRACKING' Available up to 20 Airwaybill</p>
+            <label>
+              <input type="text" name="origin" placeholder="Origin" />
+              <br />
+              <p>Origin Shipment</p>
+            </label>
+            <label>
+              <input type="text" name="destination" placeholder="Destination" />
+              <br />
+              <p>Destination Shipment</p>
+            </label>
+            <label>
+              <input
+                type="text"
+                name="weight"
+                placeholder="1"
+                style="width: 30px; text-align: center"
+              />
+              <br />
+              <p>Weight(Kg)</p>
+            </label>
+            <label>
+              <button class="redbutton">CHECK</button>
+            </label>
           </form>
         </div>
 
-        <div class="konten4">
+        <div class="konten4" style="margin-left: 5px">
           <form action="">
             <h3><b>TITIK LAYANAN</b></h3>
-            <input type="submit" value="TEMUKAN LOKASI TERDEKAT" />
+            <button
+              class="redbutton"
+              type="submit"
+              style="margin-right: 78px; margin-bottom: 1px"
+            >
+              <i class="fa fa-search" style="margin-right: 5px"></i>TEMUKAN
+              LOKASI TERDEKAT
+            </button>
             <p>Our closest location</p>
           </form>
         </div>
       </div>
     </div>
+    <div class="widget">
+      <div class="widget-konten">
+        <div class="produk">
+          <h4 class="line_top">Produk</h4>
+          <img
+            src="https://www.jne.co.id/contents/setting-product-detail-20.jpg"
+            alt="produk"
+          />
+          <p>
+            Dengan pengalaman selama 30 tahun, JNE melayani kebutuhan pelanggan
+            setianya, dengan jasa pengiriman dalam dan luar negeri.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="floatingMenu">
+        <a href="#"
+          ><img
+            src="https://pttikijalurnugrahaekakurir.force.com/eclaimform/resource/1671433394000/chatLogo"
+            alt="chatLogo"
+            width="150"
+            height="160"
+        /></a>
+      </div>
+    </div>
+    <script>
+      const btnContainer = document.getElementById("navbar");
+      const btns = btnContainer.getElementsByClassName("menu");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          let current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active");
+          this.className += " active";
+        });
+      }
+    </script>
   </body>
 </html>

@@ -50,7 +50,6 @@ li a {
 }
 
 .active {
-  /* background-color: red; */
   color: red;
 }
 
@@ -74,7 +73,7 @@ li a:hover {
   border: none;
   margin: 0;
   outline: none;
-  width: 140px;
+  width: 125px;
 }
 
 .search-container i {
@@ -223,6 +222,13 @@ li a:hover {
   margin-top: 5px;
   font-style: italic;
   font-size: 11px;
+  color: #999;
+}
+
+.konten2 p {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 11px;
   color: #ffa8ab;
 }
 
@@ -231,20 +237,24 @@ li a:hover {
   font-weight: bold;
 }
 
-.konten2,
 .konten3,
 .konten4 {
   color: #333333;
   background-color: white;
-  padding: 40px 0;
+  padding: 40px 15px;
   width: fit-content;
   float: left;
+  box-shadow: 0px 5px 15px 0px rgb(153 153 153 / 58%);
 }
 
 .konten2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-left: 7%;
   color: white;
   background-color: #e11b22;
+  float: left;
+  box-shadow: 0px 5px 15px 0px rgb(153 153 153 / 58%);
 }
 
 .konten2 button {
@@ -254,15 +264,21 @@ li a:hover {
   font-weight: 700;
   border-radius: 5px;
   border: none;
+  border-top: 2px solid #51c39e;
   margin-top: 10px;
   cursor: pointer;
   margin-right: 20px;
 }
 
+.konten2 button:hover {
+  background-color: #178f65;
+  border-top-color: #2eab82;
+}
+
 textarea {
   width: 210px;
-  margin-right: 10px;
   margin-top: 10px;
+  margin-right: 10px;
   padding: 10px;
   height: 19px;
   resize: none;
@@ -273,16 +289,75 @@ textarea {
   border-radius: 5px;
 }
 
-input[type="submit"] {
-  background-color: #4caf50;
+.konten3 input[type="text"] {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+  padding: 10px;
+  width: 125px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  outline: none;
+}
+
+.konten3 input[type="text"]::placeholder {
+  color: lightgrey;
+}
+
+.konten3 label {
+  float: left;
+}
+
+.redbutton {
+  margin-top: 10px;
+  margin-right: 15px;
+  background-color: #e11b22;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  border-radius: 5px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  font-weight: 700;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: darkgreen;
+.redbutton:hover {
+  background-color: #b30000;
+}
+
+.konten4 {
+  padding-left: 30px;
+}
+
+.line_top {
+  background-color: #e11e1e;
+  opacity: 1;
+  margin-top: 0px;
+  left: 0px;
+  top: -8px;
+  width: 30px;
+  height: 1px;
+}
+
+.widget {
+  padding-top: 50px 0;
+  background-color: #f3f3f3;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.floatingMenu {
+  position: fixed;
+  right: 10px;
+  z-index: 10;
+  margin: auto;
+  bottom: 5%;
+}
+
+.floatingMenu a img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  cursor: pointer;
 }
