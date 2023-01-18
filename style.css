@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   font-family: Roboto, sans-serif;
   font-size: 14px;
+  color: #666;
 }
 
 ul {
@@ -216,6 +217,10 @@ li a:hover {
   width: 100%;
   position: relative;
   display: block;
+
+  /*mengatur konten didalam class agar horizontal*/
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .kontenHorizontal p {
@@ -328,29 +333,130 @@ textarea {
   padding-left: 30px;
 }
 
-.line_top {
-  background-color: #e11e1e;
-  opacity: 1;
-  margin-top: 0px;
-  left: 0px;
-  top: -8px;
-  width: 30px;
-  height: 1px;
-}
-
 .widget {
-  padding-top: 50px 0;
-  background-color: #f3f3f3;
+  padding: 50px 0;
+  height: 100%;
+  background-color: white;
   background-position: center bottom;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;
 }
 
+.widget-konten {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.line_top {
+  background-color: #e11e1e;
+  margin-top: 0px;
+  left: 0px;
+  top: -8px;
+  width: 30px;
+  height: 1px;
+  position: relative;
+  display: block;
+}
+
+.widget-konten h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.widget-konten img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.widget-konten h5 a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #666;
+}
+
+.tggl {
+  margin: 10px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.kolom {
+  margin-top: 0px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  width: 22.4%;
+  display: block;
+  float: left;
+}
+
+.produk .fa {
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+.widget-konten .produk a {
+  color: #db321c;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.widget-konten a {
+  color: #666;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.list-berita {
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 8px;
+}
+
+.kolom select {
+  padding: 10px;
+  width: 166px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  margin-top: -50px;
+  color: #666;
+  border-radius: 5px;
+  outline: none;
+}
+
+.phone {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin: 10px 0;
+}
+
+.phone div {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.phone h5 {
+  float: right;
+  font-size: 20px;
+}
+
+.ask nav a {
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  margin-right: 40px;
+  font-weight: 400;
+}
+
 .floatingMenu {
   position: fixed;
   right: 10px;
-  z-index: 10;
   margin: auto;
   bottom: 5%;
 }
