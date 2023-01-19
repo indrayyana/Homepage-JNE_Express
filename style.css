@@ -17,6 +17,24 @@ ul {
   padding: 0;
 }
 
+.menu-kanan {
+  margin-right: -7px;
+  position: fixed;
+  top: 35%;
+  right: 0;
+  z-index: 9999;
+}
+
+.menu-kanan li {
+  background-color: #1e3278;
+  border-bottom: 3px solid #112464;
+}
+
+.menu-kanan li a {
+  height: 20px;
+  width: 35px;
+}
+
 .header {
   height: 70px;
   background-color: white;
@@ -478,6 +496,24 @@ textarea {
   float: left;
   margin-right: 35px;
   margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #1e3278;
+  height: 400px;
+  padding-bottom: 30px;
+  display: block;
+}
+
+.footers p {
+  color: #a1b2f7;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.footers p a {
+  color: #a1b2f7;
+  margin-right: 10px;
 }
 
 .floatingMenu {
