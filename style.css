@@ -238,7 +238,6 @@ li a:hover {
 
   /*mengatur konten didalam class agar horizontal*/
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .kontenHorizontal p {
@@ -525,7 +524,6 @@ textarea {
   float: right;
   padding-top: 75px;
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .kanan p {
@@ -556,7 +554,6 @@ textarea {
 
 .bottoms .phone {
   margin: 0;
-  /* margin-left: 37%; */
   border: none;
   padding: 20px;
   background-color: #e11e1e;

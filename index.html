@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -529,7 +530,6 @@
       const btnContainer = document.getElementById("navbar");
       const btns = btnContainer.getElementsByClassName("menu");
 
-      // Loop through the buttons and add the active class to the current/clicked button
       for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
           let current = document.getElementsByClassName("active");
