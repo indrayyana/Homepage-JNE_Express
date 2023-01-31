@@ -234,7 +234,6 @@ li a:hover {
 .kontenHorizontal {
   width: 100%;
   position: relative;
-  display: block;
 
   /*mengatur konten didalam class agar horizontal*/
   display: flex;

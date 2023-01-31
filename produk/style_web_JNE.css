@@ -1,0 +1,244 @@
+nav {
+  margin-left: 232px;
+  display: inline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#img_a {
+  margin: 10px 0px 10px 40px;
+  position: relative;
+}
+
+.footer {
+  background-color: #1e3278;
+  height: 400px;
+  padding-bottom: 30px;
+  display: block;
+}
+
+.footers p {
+  color: #a1b2f7;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.footers p a {
+  color: #a1b2f7;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.menubot {
+  width: 200px;
+}
+
+.kanan {
+  float: right;
+  padding-top: 75px;
+  display: flex;
+}
+
+.kanan p {
+  color: #a1b2f7;
+  margin-bottom: 5px;
+}
+
+.judulf {
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.downloadApp {
+  float: right;
+  padding-top: 75px;
+}
+
+.bottoms p {
+  margin-bottom: 15px;
+  padding-top: 25px;
+  color: #999;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bottoms .phone {
+  margin: 0;
+  border: none;
+  padding: 20px;
+  background-color: #e11e1e;
+  float: right;
+  width: 460px;
+}
+
+.bottoms .phone a {
+  width: 500px;
+  font-size: 12px;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.bottoms .phone a i {
+  float: left;
+  border: 2px solid #fff;
+  padding: 6px 7px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.bottoms .phone a strong {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-top: 4px;
+}
+
+.floatingMenu {
+  position: fixed;
+  right: 10px;
+  margin: auto;
+  bottom: 5%;
+  z-index: 9999;
+}
+
+.floatingMenu a img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.greenbutton {
+  padding: 12px 15px;
+  color: white;
+  background-color: #31b184;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  border-top: 2px solid #51c39e;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.img_b {
+  width: 180px;
+  height: 140px;
+}
+img.foto_kiri {
+  width: 130px;
+  height: 130px;
+  margin-left: 520px;
+  position: absolute;
+}
+
+img.foto_kanan {
+  width: 130px;
+  height: 130px;
+  margin-left: 920px;
+}
+
+.box2 {
+  width: 308px;
+  height: 20px;
+  font-size: 14px;
+  margin: 330px 0px 0px 460px;
+  color: gray;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.judul_boxproduct_kiri {
+  width: 312px;
+  height: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 45px 0px 0px 460px;
+  position: absolute;
+}
+.judul_boxproduct_kanan {
+  width: 308px;
+  height: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 18px 0px 0px 900px;
+}
+
+.desc_versikanan {
+  width: 308px;
+  height: 20px;
+  font-size: 14px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 0px 900px;
+}
+
+#box_tabelproduct {
+  margin: 55px 0px 0px 39px;
+  padding: 0px auto auto 17px;
+  width: 290px;
+  height: auto;
+  background-color: white;
+  color: gray;
+  position: absolute;
+}
+
+li {
+  list-style-type: disc;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#box_sampingboxproduct {
+  width: auto;
+  height: 95px;
+  border: 0.3px ridge lightgray;
+  border-bottom: 5px solid red;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 45px 10px 0px 350px;
+  padding: 30px 15px 10px 10px;
+  color: red;
+}
+
+.Font_productmenu {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 12px;
+  color: gray;
+  font-size: 14px;
+}
+
+.img_logo {
+  position: absolute;
+  right: 45px;
+  top: 560px;
+}
+
+.box {
+  color: grey;
+  width: auto;
+  height: 190px;
+  border: none;
+  margin: -12px 10px 0px 349px;
+  font-size: 34px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
